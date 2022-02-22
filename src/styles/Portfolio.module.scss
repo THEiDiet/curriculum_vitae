@@ -1,0 +1,107 @@
+@import "variables.module";
+.portfolio {
+    padding: 30px 40px 0;
+    width: 100%;
+    .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__item{
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding: 0 0 60px;
+        max-width: 400px;
+        margin: 0 auto;
+        &:last-child{
+            padding-bottom: 30px;
+        }
+    }
+    &__preview {
+        position: relative;
+        background: transparent;
+        transition: background-color .3s linear;
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+        .preview__img{
+            position: relative;
+            z-index: 10;
+            top: 0;
+            left: 10px;
+            display: block;
+            min-height: 200px;
+            width: 100%;
+            box-shadow: 15px 5px 20px rgb(0 0 0 / 50%);
+            transform: perspective(15cm) rotateX(-10deg) rotateY(20deg) scale(0.9);
+            transition: all .3s ease-out;
+        }
+        .preview__img:hover{
+            left: -10px;
+            transform: perspective(15cm) rotateX(0deg) rotateY(0deg) scale(1);
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 100%;
+            top: 0;
+            right: -10px;
+            border-radius: 50px;
+            background: $color2;
+            z-index: 1;
+        }
+    }
+    &__button{
+        position: absolute;
+        z-index: 20;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        &_hidden{
+            visibility: hidden;
+            transition: all .2s ease-in;
+        }
+        &_showed{
+            visibility: visible;
+        }
+    }
+
+    @media(min-width: 991px){
+        .flex{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__item{
+            padding: 30px;
+        }
+    }
+}
+.header{
+    text-align: center;
+    padding: 30px 0 20px;
+}
+
+.name{
+    color: $fc3;
+    margin-top: 15px;
+    padding: 10px;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    &_hidden{
+        top: 0;
+        left: -100px;
+        position: absolute;
+        transition: all .2s ease-in;
+    }
+    &_showed{
+        left: 0;
+    }
+}
+.desc {
+
+}

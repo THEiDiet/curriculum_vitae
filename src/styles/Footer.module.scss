@@ -1,0 +1,73 @@
+@import "variables.module";
+
+.footerContainer{
+    height: 150px;
+    width: 100%;
+    background: $bgDarkColor;
+    @media(min-width: 576px) {
+        height: 100px;
+    }
+}
+.footer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 25px;
+    position: relative;
+    p{
+        padding-top: 25px;
+        text-align: center;
+    }
+    @media(min-width: 576px){
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        p{
+            padding-top: 0;
+            width: 100%;
+            text-align: right;
+        }
+    }
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    svg{
+        width: 40px;
+        height: 40px;
+        fill: $fc2;
+    }
+    a:hover{
+        color: $fc1;
+        svg{
+            fill: $fc1;
+            transform: scale(1.05);
+        }
+    }
+    @media(min-width: 576px){
+        justify-content: flex-start;
+        &>*:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+}
+.head {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transform: translate(100%,0);
+    z-index: 10;
+    right: 50%;
+    bottom: 0;
+    &__image{
+        display: block;
+        max-width: 300px;
+        max-height: 300px;
+        height: 300px;
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+    }
+}

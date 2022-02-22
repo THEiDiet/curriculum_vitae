@@ -1,0 +1,50 @@
+@import "./styles/variables.module.scss";
+@import-normalize;
+*{
+  box-sizing: border-box;
+  color: $fc3;
+  font-size: 18px;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  color: $fc1;
+}
+a{
+  text-decoration: none;
+}
+p{
+  margin: 0;
+  padding: 0;
+  color: $fc3;
+  line-height: 1.5;
+}
+html,body{
+  width: 100%;
+  min-height: 100vh;
+  background: $bgColor;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+textarea{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#root{
+  width: 100%;
+  min-height: 100vh;
+}
