@@ -10,6 +10,7 @@
         justify-content: center;
     }
     &__item{
+        cursor: pointer;
         flex-direction: column;
         justify-content: center;
         position: relative;
@@ -57,6 +58,7 @@
     }
     &__button{
         &_hidden{
+            color: #6fadc7;
             position: absolute;
             top: 50%;
             z-index: 10;
