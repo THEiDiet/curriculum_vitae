@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/curriculum_vitae/static/css/main.7693437f.css",
+    "main.css": "/curriculum_vitae/static/css/main.5e6abd14.css",
     "main.js": "/curriculum_vitae/static/js/main.46c587e3.js",
     "static/js/787.3ff34d2b.chunk.js": "/curriculum_vitae/static/js/787.3ff34d2b.chunk.js",
     "static/media/bg.jpg": "/curriculum_vitae/static/media/bg.c1632aaef8cd97e54ae9.jpg",
@@ -12,12 +12,12 @@
     "static/media/circle.png": "/curriculum_vitae/static/media/circle.bd0b17e5d72a75ccf01a.png",
     "static/media/auth.jpg": "/curriculum_vitae/static/media/auth.d361626c917d1ada2217.jpg",
     "index.html": "/curriculum_vitae/index.html",
-    "main.7693437f.css.map": "/curriculum_vitae/static/css/main.7693437f.css.map",
+    "main.5e6abd14.css.map": "/curriculum_vitae/static/css/main.5e6abd14.css.map",
     "main.46c587e3.js.map": "/curriculum_vitae/static/js/main.46c587e3.js.map",
     "787.3ff34d2b.chunk.js.map": "/curriculum_vitae/static/js/787.3ff34d2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7693437f.css",
+    "static/css/main.5e6abd14.css",
     "static/js/main.46c587e3.js"
   ]
 }
