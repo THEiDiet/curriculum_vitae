@@ -18,8 +18,10 @@ const PortfolioItem = ({image,description,name}:projectType) => {
     }
     return (
         <div className={s.portfolio__item} >
-            <div className={s.portfolio__preview} >
-                <img className={s.preview__img} src={image} onMouseLeave={onMouseLeaveHandler} onMouseEnter={onMouseEnterHandler}/>
+            <div className={s.portfolio__preview} onMouseLeave={onMouseLeaveHandler} onMouseEnter={onMouseEnterHandler}>
+
+                <img className={`${s.preview__img} ${ isTouched ? s.preview__img_hover : ''}`} src={image} />
+                <span  className={`${s.portfolio__button_hidden} ${isTouched ? s.portfolio__button_showed : ''}`}>See</span>
             </div>
             <div className={s.name}>
                 <h3 className={`${s.name_hidden} ${isTouched && s.name_showed}`}>{name}</h3>

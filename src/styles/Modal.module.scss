@@ -1,0 +1,32 @@
+@import "variables.module";
+
+.modalBg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba($bgDarkColor,0.5);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: 90%;
+    height: auto;
+    border-radius: 4px;
+    background: $bgColor;
+    z-index: 100;
+    overflow-y: auto;
+    padding: 20px 10px ;
+}
+.image{
+    width: 100%;
+    height: auto;
+}
+.header {
+
+}

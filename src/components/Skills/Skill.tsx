@@ -5,10 +5,10 @@ import s from '../../styles/Skills.module.scss'
 type propsT = {
     title:string
     text:string
-    img:string
+
 }
 
-const Skill = ({title,text,img}:propsT) => {
+const Skill = ({title,text}:propsT) => {
     return (
         <div className={s.skill}>
             <h3 className={s.title}>{title}</h3>

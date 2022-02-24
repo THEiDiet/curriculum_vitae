@@ -17,11 +17,10 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className={s.skillContainer}>
-                    <Skill text={'toolkit, sagas, thunks'} title={'React'} img={react}/>
-                    <Skill text={'toolkit, sagas, thunks'} title={'React'} img={react}/>
-                    <Skill text={'toolkit, sagas, thunks'} title={'React'} img={react}/>
-                    <Skill text={'class components, functional сomponents\n' +
-                    'hooks, HOC and so on'} title={'Redux'} img={react}/>
+                    <Skill text={'v17,class and functional components, hooks, HOC etc.'} title={'React'}/>
+                    <Skill text={'Toolkit, sagas, thunk'} title={'Redux'}/>
+                    <Skill text={'Arrow function, classes, interfaces and types, enums and generics'} title={'JavaScript and Typescript'}/>
+                    <Skill text={'Preprocessor SCSS, variables, HTML semantic elements'} title={'CSS and HTML'}/>
                 </div>
             </div>
         </div>

@@ -10,15 +10,15 @@ const Home = () => {
     return (
         <div className={`${s.homeContainer}`} id='home'>
             <div className={`${c.container} ${s.home}`}>
-                <div className={s.elems}>
-                {/*    <MouseParallaxContainer className={s.elems}>*/}
-                {/*        {arr.map(el => (*/}
-                {/*            <MouseParallaxChild className={s['span'+el]} key={el} factorX={0.03} factorY={el} >*/}
-                                {/*<span  className={s['span'+el]}/>*/}
+
+                    {/*<MouseParallaxContainer className={s.elems}>*/}
+                    {/*    {arr.map(el => (*/}
+                    {/*        <MouseParallaxChild className={s['span'+el]} key={el} factorX={0.03} factorY={0.05} >*/}
+                    {/*            <span  className={s['span'+el]}/>*/}
                     {/*        </MouseParallaxChild>*/}
                     {/*    ))}*/}
                     {/*</MouseParallaxContainer>*/}
-
+                <div className={s.elems}>
                     {arr.map(el => <span key={el} className={s['span'+el]}/>)}
                     <span className={s.spanText}>こんにちは</span>
                 </div>
